@@ -7,6 +7,8 @@ title: Spectrum 2
 
 You have to have boost-devel and libidn-devel installed before compiling Swiften, otherwise it will compile against bundled version of Boost and libidn and Spectrum compilation will fail.
 
+	sudo yum install libidn-devel boost-devel
+
 ## Install Swiften from git repository:
 
 	git clone git://swift.im/swift
@@ -72,15 +74,19 @@ Note that you have to have at least Python 2.5 to build Swiften.
 
 In Fedora, you just have to install following packages:
 
-	sudo yum install protobuf protobuf protobuf-devel
+	sudo yum install protobuf-devel
 
 ## Install Libpurple for libpurple backend
 
 You should definitely have latest libpurple, so download Pidgin and compile it, because your distribution probably doesn't have the latest one.
 
+	sudo yum install libpurple-devel
+
 ## Install libCommuni for libCommuni IRC backend
 
 The instructions are defined on [libCommuni wiki](https://github.com/communi/communi/wiki).
+
+	sudo yum install libcommuni-devel
 
 ## Install Spectrum 2
 
