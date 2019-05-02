@@ -40,3 +40,12 @@ script:
     fi
 notifications:
   slack: spectrum2:CIlYHtxGMAaxs3qVHfwBzCuy
+deploy:
+  provider: pages
+  repo: $GH_REPO_SLUG
+  github_token: $GH_REPO_TOKEN  # Set in the settings page of your repository, as a secure variable
+  skip_cleanup: true
+  local_dir: docs/api/html
+  keep_history: true
+  on:
+    branch: master
